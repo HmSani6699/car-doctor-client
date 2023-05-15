@@ -1,3 +1,4 @@
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import banner1 from '../../../assets/images/banner/1.jpg';
 import banner2 from '../../../assets/images/banner/2.jpg';
 import banner3 from '../../../assets/images/banner/3.jpg';
@@ -21,8 +22,8 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                    <a href="#slide4" className="btn btn-circle mr-4">❮</a>
-                    <a href="#slide2" className="btn btn-circle bg-[#FF3811]">❯</a>
+                    <a href="#slide4" className="btn btn-circle mr-4"><FaArrowLeft/></a>
+                    <a href="#slide2" className="btn btn-circle bg-[#FF3811]"><FaArrowRight /></a>
                 </div>
             </div>
             <div id="slide2" className="carousel-item relative w-full rounded-xl">
@@ -39,8 +40,8 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                    <a href="#slide1" className="btn btn-circle mr-4">❮</a>
-                    <a href="#slide3" className="btn btn-circle bg-[#FF3811]">❯</a>
+                    <a href="#slide1" className="btn btn-circle mr-4"><FaArrowLeft/></a>
+                    <a href="#slide3" className="btn btn-circle bg-[#FF3811]"><FaArrowRight /></a>
                 </div>
             </div>
             <div id="slide3" className="carousel-item relative w-full rounded-xl">
@@ -57,8 +58,8 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                    <a href="#slide2" className="btn btn-circle mr-4">❮</a>
-                    <a href="#slide4" className="btn btn-circle bg-[#FF3811]">❯</a>
+                    <a href="#slide2" className="btn btn-circle mr-4"><FaArrowLeft/></a>
+                    <a href="#slide4" className="btn btn-circle bg-[#FF3811]"><FaArrowRight /></a>
                 </div>
             </div>
             <div id="slide4" className="carousel-item relative w-full rounded-xl">
@@ -75,8 +76,8 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                    <a href="#slide3" className="btn btn-circle mr-4">❮</a>
-                    <a href="#slide1" className="btn btn-circle bg-[#FF3811]">❯</a>
+                    <a href="#slide3" className="btn btn-circle mr-4"><FaArrowLeft/></a>
+                    <a href="#slide1" className="btn btn-circle bg-[#FF3811]"><FaArrowRight /></a>
                 </div>
             </div>
         </div>
