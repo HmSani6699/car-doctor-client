@@ -1,11 +1,15 @@
 import { FaFacebookF, FaGoogle } from 'react-icons/fa';
 import login from '../../assets/images/login/login.svg';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../Providers/AuthPrividers';
 
 
 
 
 const Login = () => {
+
+    const {signIn} = useContext(AuthContext);
 
     const handleFormSubmit=event=>{
         event.preventDefault()
@@ -14,6 +18,13 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(email,password);
+
+        signIn(email,password)
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error=>console.log(error))
 
     }
 
