@@ -6,6 +6,7 @@ const Services = () => {
 
 
     fetch('http://localhost:5000/services')
+    // fetch('services.json')
         .then(res => res.json())
         .then(data => {
             setServices(data);
