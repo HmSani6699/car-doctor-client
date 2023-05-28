@@ -6,15 +6,13 @@ const CheckOuts = () => {
     const { user } = useContext(AuthContext);
     const [checkOuts, setCheckOut] = useState([])
 
-    const url = `http://localhost:5000/checkOut?email=${user.email}`;
-
     useEffect(() => {
-        fetch(url)
+        fetch(`http://localhost:5000/checkOut?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setCheckOut(data);
             })
-    }, [])
+    }, [user.email])
 
     const handleDelete = (_id) => {
         fetch(`http://localhost:5000/checkOut/${_id}`, {
@@ -39,11 +37,7 @@ const CheckOuts = () => {
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
+                            <th>Delete</th>
                             <th>Name</th>
                             <th>Job</th>
                             <th>Favorite Color</th>
