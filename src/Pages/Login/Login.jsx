@@ -9,26 +9,47 @@ import { AuthContext } from '../../Providers/AuthPrividers';
 
 const Login = () => {
 
-    const {signIn} = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
     const navigate = useNavigate()
-    const location  = useLocation();
+    const location = useLocation();
     const from = location.state?.from?.pathname || '/';
 
-    const handleFormSubmit=event=>{
+    const handleFormSubmit = event => {
         event.preventDefault()
 
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email,password);
+        console.log(email, password);
 
-        signIn(email,password)
-        .then(result=>{
-            const user = result.user;
-            console.log(user);
-            navigate(from, { replace: true });
-        })
-        .catch(error=>console.log(error))
+        signIn(email, password)
+            .then(result => {
+                const user = result.user;
+
+                const loggedUser = {
+                    email: user.email
+                }
+                console.log(loggedUser);
+
+
+
+                fetch('http://localhost:5000/jwt', {
+                    method: "POST",
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(loggedUser)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        // navigate(from, { replace: true });
+                        localStorage.setItem('car-doctor-token',data.token)
+                    })
+
+
+            })
+            .catch(error => console.log(error))
 
     }
 
@@ -68,7 +89,7 @@ const Login = () => {
                             <button><FaGoogle></FaGoogle></button>
                         </div>
                         <p className='text-center mb-10'>Have an account? <Link className='text-orange-500' to='/register'>Sign up</Link></p>
-                        
+
                     </div>
                 </div>
             </div>
