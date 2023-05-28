@@ -23,7 +23,7 @@ const CheckOuts = () => {
                 }
 
             })
-    }, [user.email])
+    }, [user.email,navigate])
 
     const handleDelete = (_id) => {
         fetch(`http://localhost:5000/checkOut/${_id}`, {
