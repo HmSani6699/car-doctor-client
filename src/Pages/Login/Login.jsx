@@ -43,8 +43,8 @@ const Login = () => {
                     .then(res => res.json())
                     .then(data => {
                         console.log(data);
-                        // navigate(from, { replace: true });
                         localStorage.setItem('car-doctor-token',data.token)
+                        navigate(from, { replace: true });
                     })
 
 
