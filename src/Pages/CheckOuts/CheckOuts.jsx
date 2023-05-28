@@ -15,6 +15,21 @@ const CheckOuts = () => {
                 setCheckOut(data);
             })
     }, [])
+
+    const handleDelete = (_id) => {
+        fetch(`http://localhost:5000/checkOut/${_id}`, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+
+                const remaning = checkOuts.filter(check => check._id !== _id);
+                // console.log(remaning);
+                setCheckOut(remaning)
+            })
+    }
+
     return (
         <div>
             <h2>All check out {checkOuts.length}</h2>
@@ -37,9 +52,10 @@ const CheckOuts = () => {
                     </thead>
                     <tbody>
                         {
-                            checkOuts.map(checkOut=><CheckOutRow 
-                            key={checkOut._id}
-                            checkOut={checkOut}
+                            checkOuts.map(checkOut => <CheckOutRow
+                                key={checkOut._id}
+                                checkOut={checkOut}
+                                handleDelete={handleDelete}
                             ></CheckOutRow>)
                         }
                     </tbody>
