@@ -16,7 +16,7 @@ const Banner = () => {
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-warning">Latest Project</button>
+                            <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Banner = () => {
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-warning">Latest Project</button>
+                            <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Banner = () => {
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-warning">Latest Project</button>
+                            <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const Banner = () => {
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-warning">Latest Project</button>
+                            <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
                         </div>
                     </div>

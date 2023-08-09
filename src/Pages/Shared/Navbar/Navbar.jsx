@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
-import { useContext} from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../../../Providers/AuthPrividers';
 
 
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const handleLogin = () => {
         logOut()
-            .then(()=>{
+            .then(() => {
                 localStorage.removeItem('car-doctor-token')
             })
             .catch(error => console.log(error))
@@ -21,12 +21,8 @@ const Navbar = () => {
         <li> <Link to='/'>Home</Link> </li>
         <li> <Link to='/'>About</Link> </li>
         {
-            user ? <>
-                <li> <Link onClick={handleLogin}>Log out</Link> </li>
-                <li> <Link to='/checkOuts'>My CheckOut</Link> </li>
-                </>
-                :
-                <li> <Link to='/login'>Log in</Link> </li>
+            user &&
+                <li> <Link to='/checkOut'>My CheckOut</Link> </li>
         }
     </>
 
@@ -51,7 +47,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn  bg-[#ff3811] border-0">Button</button>
+                {
+                    user ? <>
+                    <Link className='border-0 btn bg-[#FF3811]' onClick={handleLogin}>Log out</Link>
+                    </>
+                        :
+                        <Link className='border-0 btn bg-[#FF3811]'  to='/login'>Log in</Link>
+                }
             </div>
         </div>
     );

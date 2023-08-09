@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 
 const ServicesCard = ({ service }) => {
 
-    const {_id, title, price, img } = service;
+    const { _id, title, price, img } = service;
 
     // console.log(_id, title, price, img);
 
 
     return (
         <div className="card w-full bg-base-100 shadow-xl border">
-            <figure className="px-10 pt-10">
-                <img src={img}   alt="Shoes" className="rounded-xl h-[200px]" />
-            </figure>
+            <div className='overflow-hidden'>
+                <figure className="">
+                    <img src={img} alt="Shoes" className="rounded-tl-xl h-[250px] w-full" />
+                </figure>
+            </div>
             <div className="card-body">
                 <h2 className="card-title text-2xl font-bold">{title}</h2>
                 <div className="card-actions flex items-center justify-center text-orange-500">

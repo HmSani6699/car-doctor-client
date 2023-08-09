@@ -21,6 +21,7 @@ const CheckOuts = () => {
                 else {
                     navigate('/')
                 }
+                console.log(data);
 
             })
     }, [user.email,navigate])
@@ -41,18 +42,18 @@ const CheckOuts = () => {
 
     return (
         <div>
-            <h2>All check out {checkOuts.length}</h2>
+            <h2 className="text-4xl text-center font-bold mb-16">All check out {checkOuts.length}</h2>
 
-            <div className="overflow-x-auto w-full">
-                <table className="table w-full">
+            <div className="overflow-x-auto w-full mb-32">
+                <table className="table w-full text-center">
                     {/* head */}
                     <thead>
                         <tr>
                             <th>Delete</th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
-                            <th></th>
+                            <th>Details</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
