@@ -51,7 +51,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-outline btn-warning">Button</button>
+                <button className="btn  bg-[#ff3811] border-0">Button</button>
             </div>
         </div>
     );

@@ -6,7 +6,9 @@ const ServicesCard = ({ service }) => {
 
     const {_id, title, price, img } = service;
 
-    // console.log(title,price);
+    // console.log(_id, title, price, img);
+
+
     return (
         <div className="card w-full bg-base-100 shadow-xl border">
             <figure className="px-10 pt-10">

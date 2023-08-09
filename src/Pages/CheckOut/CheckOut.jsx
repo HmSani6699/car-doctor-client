@@ -70,7 +70,7 @@ const CheckOut = () => {
 
                 </div>
                 <div className="form-control mt-6">
-                    <input className="btn btn-primary btn-block" type="submit" value="Check page" />
+                    <input className="btn bg-[#ff3811] border-0 btn-block" type="submit" value="Check page" />
                 </div>
             </form>
         </div>
