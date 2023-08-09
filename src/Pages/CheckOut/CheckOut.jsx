@@ -25,7 +25,7 @@ const CheckOut = () => {
             price:price
         }
         
-        fetch('http://localhost:5000/checkOut',{
+        fetch('https://car-doctor-server-hmsani6699.vercel.app/checkOut',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

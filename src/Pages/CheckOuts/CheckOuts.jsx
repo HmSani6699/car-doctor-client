@@ -9,7 +9,7 @@ const CheckOuts = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/checkOut?email=${user.email}`, {
+        fetch(`https://car-doctor-server-hmsani6699.vercel.app/checkOut?email=${user.email}`, {
             method: "GET",
             headers: {
                 authorization: `Bearer ${localStorage.getItem('car-doctor-token')}`
@@ -27,7 +27,7 @@ const CheckOuts = () => {
     }, [user.email,navigate])
 
     const handleDelete = (_id) => {
-        fetch(`http://localhost:5000/checkOut/${_id}`, {
+        fetch(`https://car-doctor-server-hmsani6699.vercel.app/checkOut/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
