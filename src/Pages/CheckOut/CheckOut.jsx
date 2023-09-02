@@ -42,7 +42,7 @@ const CheckOut = () => {
         <div className="mb-20">
             <h2 className="text-4xl font-bold text-center my-10">Check out page name {title}</h2>
             <form onSubmit={handleCheckOut}>
-                <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
@@ -69,7 +69,7 @@ const CheckOut = () => {
                     </div>
 
                 </div>
-                <div className="form-control mt-6">
+                <div className="form-control mt-6 p-3">
                     <input className="btn bg-[#ff3811] border-0 btn-block" type="submit" value="Check page" />
                 </div>
             </form>
