@@ -10,11 +10,11 @@ const Banner = () => {
         <div className="carousel w-full h-[600px]">
             <div id="slide1" className="carousel-item relative w-full rounded-xl">
                 <img src={banner1} className="w-full rounded-xl" />
-                <div className="text-white rounded-xl absolute h-full flex items-center right-5 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-                    <div className='w-[430px] pl-10 space-y-5'>
-                        <h2 className='text-6xl font-bold  '>Affordable Price For Car Servicing</h2>
+                <div className="text-white rounded-xl absolute h-full flex items-center right-2 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                    <div className='w-[430px] lg:pl-10 space-y-5 p-3 text-center lg:text-left'>
+                        <h2 className='text-4xl lg:text-5xl font-bold   text-center lg:text-left md:text-left'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <div>
+                        <div className='mt-10'>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
                             <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
@@ -28,11 +28,11 @@ const Banner = () => {
             </div>
             <div id="slide2" className="carousel-item relative w-full rounded-xl">
                 <img src={banner2} className="w-full rounded-xl" />
-                <div className="text-white rounded-xl absolute h-full flex items-center right-5 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-                    <div className='w-[430px] pl-10 space-y-5'>
-                        <h2 className='text-6xl font-bold  '>Affordable Price For Car Servicing</h2>
+                <div className="text-white rounded-xl absolute h-full flex items-center right-2 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                    <div className='w-[430px] lg:pl-10 space-y-5 p-3 text-center lg:text-left'>
+                        <h2 className='lg:text-5xl text-4xl font-bold   text-center lg:text-left md:text-left'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <div>
+                        <div className='mt-10'>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
                             <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
@@ -46,11 +46,11 @@ const Banner = () => {
             </div>
             <div id="slide3" className="carousel-item relative w-full rounded-xl">
                 <img src={banner3} className="w-full rounded-xl" />
-                <div className="text-white rounded-xl absolute h-full flex items-center right-5 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-                    <div className='w-[430px] pl-10 space-y-5'>
-                        <h2 className='text-6xl font-bold  '>Affordable Price For Car Servicing</h2>
+                <div className="text-white rounded-xl absolute h-full flex items-center right-2 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                    <div className='w-[430px] lg:pl-10 space-y-5 p-3 text-center lg:text-left'>
+                        <h2 className='text-4xl lg:text-5xl font-bold text-center lg:text-left md:text-left'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <div>
+                        <div className='mt-10'>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
                             <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
@@ -64,11 +64,11 @@ const Banner = () => {
             </div>
             <div id="slide4" className="carousel-item relative w-full rounded-xl">
                 <img src={banner4} className="w-full rounded-xl" />
-                <div className="text-white rounded-xl absolute h-full flex items-center right-5 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
-                    <div className='w-[430px] pl-10 space-y-5'>
-                        <h2 className='text-6xl font-bold  '>Affordable Price For Car Servicing</h2>
+                <div className="text-white rounded-xl absolute h-full flex items-center right-2 top-0 left-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                    <div className='w-[430px] lg:pl-10 space-y-5 p-3 text-center lg:text-left'>
+                        <h2 className='text-4xl lg:text-5xl font-bold text-center lg:text-left md:text-left'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <div>
+                        <div className='mt-10'>
                             <button className="btn bg-[#FF3811] mr-5">Discover More</button>
                             <button className="btn bg-opacity-0 border-[#FF3811] border-2 text-[#FF3811] hover:bg-[#FF3811] hover:text-[#ffffff]">Latest Project</button>
 
